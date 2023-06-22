@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>J2H2</title>
+        <script>
+            function show(colors){
+
+                document.getElementById('blue').style.display='none';
+                document.getElementById('grey').style.display='none';
+
+                document.getElementById(colors).style.display='block'
+                
+            }
+            </script>
+    </head>
+    <body>
+        <center>
+            <table>
+                <tr>
+                    <td colspan="2" align="center">
+                        <img id="blue" src="blue.jpg" width="100px" height="100px" style="display:block">
+                        <img id="grey" src="grey.jpg" width="100px" height="100px" style="display:none">
+                        <br><br><br>
+                    </td>                    
+                </tr>
+                
+                <tr>
+                    <td><button type="button" onclick="javascript:show('blue')">Blue Shirt</button></td>
+                    <td><button type="button" onclick="javascript:show('grey')">Grey Shirt</button></td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
